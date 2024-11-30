@@ -1,0 +1,11 @@
+services:
+  backend:
+    image: sge
+    container_name: sge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
